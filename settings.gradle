@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Labrador"
 include ':app'
+include ':jk_lib'
