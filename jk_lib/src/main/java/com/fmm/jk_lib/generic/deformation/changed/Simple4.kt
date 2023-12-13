@@ -1,4 +1,4 @@
-package generic.deformation.changed
+package com.fmm.jk_lib.generic.deformation.changed
 
 // 如果我们只需要读取泛型数据（生成者），就可以把此泛型声明成协变（? extends T）    Kotlin语言  out T
 // 协变（只读模式）

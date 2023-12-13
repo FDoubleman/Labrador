@@ -1,6 +1,11 @@
 package com.fmm.jk_lib.generic.erase.demo6_ca;
 
-import generic.deformation.changed.*;
+import com.fmm.jk_lib.generic.deformation.changed.Animal;
+import com.fmm.jk_lib.generic.deformation.changed.Person;
+import com.fmm.jk_lib.generic.deformation.changed.Student;
+import com.fmm.jk_lib.generic.deformation.changed.SubSubStudent;
+
+
 
 import java.util.ArrayList;
 

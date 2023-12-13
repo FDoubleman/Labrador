@@ -1,4 +1,4 @@
-package generic.erase.demo1_ca
+package com.fmm.jk_lib.generic.erase.demo1_ca
 
 class DerryKt<T> {
     init {

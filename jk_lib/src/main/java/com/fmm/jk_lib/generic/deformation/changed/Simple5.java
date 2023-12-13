@@ -3,13 +3,6 @@ package com.fmm.jk_lib.generic.deformation.changed;
 import java.util.ArrayList;
 import java.util.List;
 
-import generic.deformation.changed.Animal;
-import generic.deformation.changed.AnimalFu;
-import generic.deformation.changed.Person;
-import generic.deformation.changed.Student;
-import generic.deformation.changed.SubStudent;
-import generic.deformation.changed.SubSubStudent;
-
 public class Simple5 {
 
     // TODO 只读模式 & 生产者  & 协变

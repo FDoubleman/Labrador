@@ -1,4 +1,4 @@
-package generic.erase.demo3_ca
+package com.fmm.jk_lib.generic.erase.demo3_ca
 
 fun main() {
     val p1 : List<Int> = ArrayList<Int>()

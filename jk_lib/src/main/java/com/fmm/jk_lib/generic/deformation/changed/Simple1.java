@@ -3,10 +3,6 @@ package com.fmm.jk_lib.generic.deformation.changed;
 import java.util.ArrayList;
 import java.util.List;
 
-import generic.deformation.changed.Person;
-import generic.deformation.changed.Student;
-import generic.deformation.changed.SubStudent;
-
 public class Simple1 {
 
     public static void main1(String[] args) {

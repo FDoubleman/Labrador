@@ -1,4 +1,4 @@
-package generic.deformation.changed
+package com.fmm.jk_lib.generic.deformation.changed
 
 class Type<T>
 

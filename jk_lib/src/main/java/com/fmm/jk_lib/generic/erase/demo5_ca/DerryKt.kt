@@ -1,4 +1,4 @@
-package generic.erase.demo5_ca
+package com.fmm.jk_lib.generic.erase.demo5_ca
 
 fun main() {
     val list1: List<*> = ArrayList<Any>()
