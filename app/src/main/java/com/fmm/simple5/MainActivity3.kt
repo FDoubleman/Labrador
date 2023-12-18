@@ -6,7 +6,37 @@ import androidx.appcompat.app.AppCompatActivity
 import com.fmm.labrador.R
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
+import kotlin.reflect.jvm.javaField
 
+/*var result : String = "Default"
+private operator fun String.provideDelegate(thisRef: MainActivity3?, property: KProperty<*>) =
+    object: ReadWriteProperty<MainActivity3?, String> {
+        override fun getValue(thisRef: MainActivity3?, property: KProperty<*>): String {
+            return this@provideDelegate
+        }
+
+        override fun setValue(thisRef: MainActivity3?, property: KProperty<*>, value: String) {
+            println("setValue:${property.javaClass} thisRef:$thisRef  ${property}") // thisRef:null
+            *//*
+            setValue:class kotlin.reflect.jvm.internal.KMutableProperty1Impl
+            thisRef:com.derry.asdelegate.simple5.MainActivity3@55b2bc
+            var com.derry.asdelegate.simple5.MainActivity3.name2: kotlin.String*//*
+
+            // 在方法里面的成员，永远拿不到 thisRef，所以无法反射
+
+            // 通过Kotlin反射，修改 name2 的值 为 value
+            property.javaField?.isAccessible = true
+            property.javaField?.set(thisRef, value)
+        }
+    }*/
+
+// TODO 新增点（同学们，这种方式是可以的）  如果你要用反射的话，推荐以下此方式
+private operator fun String.setValue(thisRef: MainActivity3, property: KProperty<*>, value: String) {
+    property.javaField?.isAccessible = true
+    property.javaField?.set(thisRef, value)
+}
+
+private operator fun String.getValue(thisRef: MainActivity3?, property: KProperty<*>)= this
 class MainActivity3 : AppCompatActivity() {
 
     var result : String = "Default"
