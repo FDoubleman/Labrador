@@ -1,6 +1,5 @@
-package com.derry.asdelegate.lambda
+package com.fmm.jk_lib.lambda
 
-import com.fmm.jk_lib.lambda.shows
 
 fun main() {
     "Derry".shows()
